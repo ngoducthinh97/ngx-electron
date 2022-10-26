@@ -56,9 +56,9 @@ export class ElectronService {
         return this.electron ? this.electron.ipcRenderer : null;
     }
 
-    public get remote(): Electron.Remote {
-        return this.electron ? this.electron.remote : null;
-    }
+    // public get remote(): Electron.Remote {
+    //     return this.electron ? this.electron.remote : null;
+    // }
 
     public get webFrame(): Electron.WebFrame {
         return this.electron ? this.electron.webFrame : null;
@@ -72,17 +72,17 @@ export class ElectronService {
         return this.electron ? this.electron.crashReporter : null;
     }
 
-    public get process(): any {
-        return this.remote ? this.remote.process : null;
-    }
+    // public get process(): any {
+    //     return this.remote ? this.remote.process : null;
+    // }
 
     public get nativeImage(): typeof Electron.nativeImage {
         return this.electron ? this.electron.nativeImage : null;
     }
 
-    public get screen(): Electron.Screen {
-        return this.electron ? this.remote.screen : null;
-    }
+    // public get screen(): Electron.Screen {
+    //     return this.electron ? this.remote.screen : null;
+    // }
 
     public get shell(): Electron.Shell {
         return this.electron ? this.electron.shell : null;
